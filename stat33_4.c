@@ -13,6 +13,7 @@ int main() {
     int total = 52;
     int drawn = 0;
     int withdrawn = 0;
+    int new = 0;
 
 
     for (int i = 0; i < 10000000; i++) {
