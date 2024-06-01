@@ -1,0 +1,32 @@
+import random
+
+
+s2 = 0
+s3 = 0
+s4 = 0
+s5 = 0
+s6 = 0
+fail = 0
+
+attempts = 0
+
+while attempts < 100000:
+	r1 = random.randint(1,100)
+	attempts = attempts + 1
+	if (r1 > 96):
+		s6 = s6 + 1
+	elif (r1 > 84):
+		s5 = s5 + 1
+	elif (r1 > 19):
+		s4 = s4 + 1
+	elif (r1 > 1):
+		s3 = s3 + 1
+	elif (r1 > 0):
+		s2 = s2 + 1
+	else:
+		fail = fail + 1
+	
+print(s2, s3, s4, s5, s6)
+
+print (s5 + s6)
+print(fail)
